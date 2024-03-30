@@ -7,6 +7,7 @@ android {
     namespace = "com.d3if6706220090.assesment1faisal"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.d3if6706220090.assesment1faisal"
         minSdk = 24
@@ -38,6 +39,7 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -51,6 +53,7 @@ android {
 
 dependencies {
 
+    implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
     implementation("androidx.activity:activity-compose:1.8.2")

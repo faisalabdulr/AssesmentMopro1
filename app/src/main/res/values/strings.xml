@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">Assesment1Faisal</string>
+    <string name="app_name">FOOD ESTATE</string>
+    <string name="masuk">Selamat Datang di FOOD ESTATE</string>
+
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="Makanan" translatable="false">Nama Makanan</string>
+    <string name="b_inggris">Bahasa Inggris</string>
+    <string name="makanan"> Harga Makanan</string>
+    <string name="jumlah_pesan">Jumlah Pesan</string>
+    <string name="input_invalid">Masukan Salah</string>
+    <string name="hitung">Hitung</string>
+    <string name="total_harga">Total Harga: %1$.2f</string>
+    <string name="sangat_baik">Sangat Baik</string>
+    <string name="diskon_besar">Diskon Besar</string>
+    <string name="diskon_sedang">Diskon Sedang</string>
+    <string name="tanpa_diskon">Tanpa Diskon</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="kembali">Kembali</string>
+    <string name="profil">Profil Pembuat</string>
+    <string name="gambar">Gambar %1$s</string>
+    <string name="dine_in">Dine-In</string>
+    <string name="bawa_Pulang">Bawa Pulang</string>
+    <string name="deskripsi_profil">Ini Adalah sebuah aplikasi berbasis android untuk mempermudah dalam pembelian makanan.</string>
+    <string name="bagikan_template">Makanan: %1$s\nJumlah Pesan: %2$s\n\nTotal Harga : %3$.2f\n%4$s</string>
 </resources>
