@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -36,7 +37,14 @@ fun LoginScreen(navController: NavHostController) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        TopAppBar(
+        TopAppBar(navigationIcon = {
+            IconButton(onClick = { navController.popBackStack() }) {
+                Icon(imageVector = Icons.Filled.ArrowBack,
+                    contentDescription = stringResource(id = R.string.kembali),
+                    tint = MaterialTheme.colorScheme.primary
+                )
+            }
+        },
             title = {
                 Text(
                     text = stringResource(id = R.string.app_name),
@@ -49,7 +57,7 @@ fun LoginScreen(navController: NavHostController) {
             actions = {
                 IconButton(
                     onClick = {
-                        navController.navigate(Screen.Home.route)
+                        navController.navigate(Screen.About.route)
                     }
                 ) {
                     Icon(
