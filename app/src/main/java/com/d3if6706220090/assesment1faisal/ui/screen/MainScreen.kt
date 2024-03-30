@@ -86,12 +86,12 @@ fun MainScreen(navController: NavController){
             )
         }
     ){
-            padding -> ScreenContent(Modifier.padding(padding))
+            padding -> BuatContent(Modifier.padding(padding))
     }
 }
 
 @Composable
-fun ScreenContent(modifier : Modifier){
+fun BuatContent(modifier : Modifier){
     var nilaiMakanan by rememberSaveable { mutableStateOf("") }
     var nilaiMakananError by rememberSaveable { mutableStateOf(false) }
 

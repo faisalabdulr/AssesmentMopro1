@@ -76,7 +76,7 @@ fun LoginScreen(navController: NavHostController) {
             Spacer(modifier = Modifier.height(16.dp)) // Berikan jarak antara teks dan tombol
 
             Button(
-                onClick = { navController.navigate(Screen.Home.route) },
+                onClick = { navController.navigate(Screen.Menu.route) },
                 modifier = Modifier.padding(vertical = 10.dp)
             ) {
                 Text("Masuk")

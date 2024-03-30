@@ -7,6 +7,7 @@ import com.d3if6706220090.assesment1faisal.Navigator.Screen
 import com.d3if6706220090.assesment1faisal.ui.screen.AboutScreen
 import com.d3if6706220090.assesment1faisal.ui.screen.LoginScreen
 import com.d3if6706220090.assesment1faisal.ui.screen.MainScreen
+import com.d3if6706220090.assesment1faisal.ui.screen.MenuScreen
 
 @Composable
 fun SetupNavGraph(navController: NavHostController = rememberNavController()) {
@@ -14,6 +15,9 @@ fun SetupNavGraph(navController: NavHostController = rememberNavController()) {
         navController = navController,
         startDestination = Screen.Login.route
     ) {
+        composable(route = Screen.Menu.route) {
+            MenuScreen(navController = navController )
+        }
         composable(route = Screen.Login.route) {
             LoginScreen(navController = navController)
         }

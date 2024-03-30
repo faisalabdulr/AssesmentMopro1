@@ -107,6 +107,6 @@ fun AboutScreen(navController: NavController){
 
 private fun getData(): List<Profil> {
     return listOf(
-        Profil("Wisnu", R.drawable.profil)
+        Profil("Faisal", R.drawable.profil)
     )
 }
