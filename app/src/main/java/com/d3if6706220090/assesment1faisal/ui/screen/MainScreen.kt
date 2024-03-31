@@ -64,7 +64,13 @@ import com.d3if6706220090.assesment1faisal.model.Profil
 fun MainScreen(navController: NavController){
     Scaffold (
         topBar = {
-            TopAppBar(
+            TopAppBar(navigationIcon = {
+                IconButton(onClick = { navController.popBackStack() }) {
+                    Icon(imageVector = Icons.Filled.ArrowBack,
+                        contentDescription = stringResource(id = R.string.kembali),
+                        tint = MaterialTheme.colorScheme.primary)
+                }
+            },
                 title = {
                     Text(text = stringResource(id = R.string.app_name))
                 },
